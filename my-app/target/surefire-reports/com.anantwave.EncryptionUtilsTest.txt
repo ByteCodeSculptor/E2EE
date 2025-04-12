@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.anantwave.EncryptionUtilsTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.722 s <<< FAILURE! - in com.anantwave.EncryptionUtilsTest
+testDecryptAESKeyWithKMS(com.anantwave.EncryptionUtilsTest)  Time elapsed: 0.601 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Cannot mock/spy class com.google.cloud.kms.v1.DecryptResponse
+Mockito cannot mock/spy because :
+ - final class
+	at com.anantwave.EncryptionUtilsTest.testDecryptAESKeyWithKMS(EncryptionUtilsTest.java:70)
+
+testEncryptAESKeyWithKMS(com.anantwave.EncryptionUtilsTest)  Time elapsed: 0 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Cannot mock/spy class com.google.cloud.kms.v1.EncryptResponse
+Mockito cannot mock/spy because :
+ - final class
+	at com.anantwave.EncryptionUtilsTest.testEncryptAESKeyWithKMS(EncryptionUtilsTest.java:52)
+
